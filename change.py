@@ -1,0 +1,18 @@
+# 找錢:多少張千元'多少張五百元'多少張百元....
+a=int(input("請輸入花費金額:")) 
+b=int(input("請輸入給多少錢:"))
+c=b-a 
+t=int(c/1000) 
+print(t,"張一千元")
+fh=int((c-1000*t)/500) 
+print(fh,"張五百元")
+h=int((c-1000*t-500*fh)/100) 
+print(h,"張一百元") 
+ff=int((c-1000*t-500*fh-100*h)/50)
+print(ff,"個五十元") 
+ten=int((c-1000*t-500*fh-100*h-ff*50)/10) 
+print(ten,"個十元") 
+five=int((c- 1000*t-500*fh-100*h-ff*50-10*ten)/5)
+print(five,"個五元") 
+one=int((c-1000*t- 500*fh-100*h-ff*50-10*ten-five*5)/1) 
+print(one,"個一元")
